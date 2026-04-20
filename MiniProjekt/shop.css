@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ 
+.LayoutContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+ 
+}
+ 
+.Layout{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: solid 1px black;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+}
+ 
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+ 
+button {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px 12px;
+    height: auto;
+    cursor: pointer;
+}
+ 
+p {
+    text-align: center;
+   
+}

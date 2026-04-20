@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Hintergrundfarben</title>
+    <style>
+        *{box-sizing:border-box}
+        html,body{height:100%}
+        body{
+            margin:0;
+            min-height:100vh;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            font-family: Arial, Helvetica, sans-serif;
+            color:#111;
+            padding:2rem;
+            transition: background 300ms ease;
+        }
+        .container{max-width:1200px}
+        h1{font-size:clamp(1.5rem,4vw,3rem);margin:0 0 1rem}
+        p{font-size:clamp(1rem,2.8vw,2rem);line-height:1.2;margin:0}
+ 
+        body{background:#e9e9e9}
+ 
+        @media (min-width:500px) and (max-width:579px){
+            body{background:#fde2e2}
+        }
+         @media (min-width:580px) and (max-width:659px){
+            body{background:#fff0d6}
+        }
+         @media (min-width:660px) and (max-width:719px){
+            body{background:#c3ca5c}
+        }
+         @media (min-width:720px) and (max-width:879px){
+            body{background:#2a60b1}
+        }
+        @media (min-width:880px) and (max-width:1039px){
+            body{background:#b95050}
+        }
+        @media (min-width:1040px) and (max-width:1119px){
+            body{background:#92864d}
+        }
+        @media (min-width:1120px) and (max-width:1299px){
+            body{background:#496e83}
+        }
+        @media (min-width:1300px){
+            body{background:#2fa97e}
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hintergrundfarbe wechselt</h1>
+        <p>jckdgvla</p>
+    </div>
+</body>
+</html>
